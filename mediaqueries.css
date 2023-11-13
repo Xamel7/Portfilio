@@ -2,7 +2,37 @@
     #desktop-nav {
         display: none;
     }
+
     #hamburger-nav {
         display: flex;
     }
+}
+
+@media screen and (max-width: 1255px) {
+    .about-containers {
+        gap: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    #projects {
+        position: none;
+        margin-top: 275px;
+    }
+
+    .about-containers,
+    .about-details-container {
+        display: grid;
+        grid-template-columns: 100% 100%;
+
+    }
+
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        cursor: pointer;
+    }    
 }
