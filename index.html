@@ -7,8 +7,10 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/thumbnail.jpg">
 </head>
 <body>
+    <header>
     <nav id="desktop-nav">
         <div class="logo">My Portfolio</div>
         <div>
@@ -19,8 +21,9 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        <img src="assets/moon.png" id="icon">
     </nav>
-    <nav id="hamburger.nav">
+    <nav id="hamburger-nav">
         <div class="logo"></div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
@@ -36,9 +39,10 @@
             </div>
         </div>
     </nav>
+</header>
     <section id="profile">
         <div class="section__pic-container">
-            <img 
+            <img class="pic"
                 src="./assets/thumbnail.jpg" 
                 alt="Joel Meadows profile picture" />
         </div>
@@ -47,11 +51,12 @@
             <h1 class="title">Joel Meadows</h1>
             <p class="section__text__p2">Fullstack Developer</p>
             <div class="btn-container">
-                <button 
-                    class="btn btn-color-2" 
-                    onclick="window.open('./assets/FinalResume.png')">
+                <a href="https://drive.google.com/file/d/1_TQPscJKmCB0fdni4ZVhEOdRW0ge9K5F/view?usp=sharing">
+                    <button 
+                    class="btn btn-color-2" >
                     Download CV
                 </button>
+            </a>
                 <button 
                     class="btn btn-color-1" 
                     onclick="location.href='./#contact'">
